@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="header pt-10">
+    <div class="header pt-10" data-aos="fade-down">
       <div class="container">
         <ul class="flex justify-between">
           <li><a href="#">WILLIAM LEE</a></li>
@@ -19,8 +20,8 @@
     </div>
     <div class="banner">
       <div class="container flex justify-between pt-18 pb-18">
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/people.png" alt="people" class="mr-6" />
-        <div class="banner-text flex flex-col">
+        <img data-aos="zoom-out-right" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/people.png" alt="people" class="mr-6" />
+        <div data-aos="zoom-in-up" class="banner-text flex flex-col">
           <h2 class="items-right">Hi<br />I’m a front-end developer</h2>
           <h1 class="self-end">William</h1>
           <a href="#" class="contactme-button self-end">contact me<img src="./images/arrow_outward.svg" alt="arrow icon" class="ml-1"/></a>
@@ -28,7 +29,7 @@
       </div>
     </div>
 
-    <div class="introduction">
+    <div data-aos="fade-down" class="introduction">
       <div class="container flex pt-40 pb-40">
         <div class="introduction-text">
           <h3 class="mb-9">Introduction</h3>
@@ -41,7 +42,7 @@
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle-sm.png" alt="sparkle"/>
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle-sm.png" alt="sparkle"/>
         </div>
-        <div class="introduction-img">
+        <div class="introduction-img" data-aos="zoom-out-right">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle.png" alt="sparkle"/>
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/photographer.png" alt="photographer"/>
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/people-2.png" alt="people"/>
@@ -49,7 +50,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <div class="aboutme flex justify-between pt-40 pb-40">
         <ol class="flex justify-between flex-wrap items-center">
           <li class="card mb-6">
@@ -86,7 +87,7 @@
     </div>
 
     <div class="contact">
-      <div class="container flex justify-center items-center pt-32 pb-32">        
+      <div data-aos="zoom-in-right" class="container flex justify-center items-center pt-32 pb-32">        
         <h3>CONTACT ME</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
             <g clip-path="url(#clip0_65_24)">
@@ -106,7 +107,7 @@
       </div>
     </div>
 
-    <div class="myprojects">
+    <div class="myprojects" data-aos="zoom-out-up">
       <div class="container pt-40 pb-40">
         <h3 class="ml-a">My Projects</h3>
         <div class="flex">
@@ -146,5 +147,12 @@
     <footer>
         <p class="pt-10 pb-10">all rights reserved @hexschool2023</p>
     </footer>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+ AOS.init({
+  duration: 1000,
+})
+  </script>
   </body>
 </html>
